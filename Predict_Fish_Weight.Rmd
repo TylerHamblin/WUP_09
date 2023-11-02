@@ -87,6 +87,9 @@ five_element_perch_model <- lm(Weight~.,data=Perch)
 anova(best_Perch_Model, five_element_perch_model)
 ```
 
+The Analysis of Variance shows how the statistics shown in the two element model are most likely significant. This explains why there is not much difference when comparing values for the RSS against a five element model. Model 1 shows height and width as 384478 and model 2 shows Length1, Length2, Length3, Height, and Width is 379369. 
+
+
 ## Pike
 
 ### Best Models
