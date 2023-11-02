@@ -160,5 +160,19 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomleft",main="Adjusted R^2"
 
 
 ### Best Two regressor model
+```{r}
+Roach_best_model <- lm(Weight~Length3+Width,data=Roach)
+summary(Roach_best_model)
+```
+
+
+```{r}
+Roach_best_model <- lm(Weight~Length3+Width,data=Roach)
+five_element_Roach_model <- lm(Weight~.,data=Roach)
+anova(Roach_best_model, five_element_Roach_model)
+```
+
+
+
 
 ## Final Summary Statements
