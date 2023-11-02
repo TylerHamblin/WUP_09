@@ -122,6 +122,7 @@ summary(Pike_best.model)
 Pike_best_2_R_Model <-lm(Weight~Length1+Length3, data=Pike)
 ``` 
 
+This code automatically creates several models and narrows in on the comparison of the 2 element model and 5 element model. The 5 element model appears to be slightly better at predicting the weight of this fish. 
 
 
 ```{r}
@@ -129,6 +130,12 @@ Pike_best.model <- lm(Weight~.,data=Pike)
 Pike_best_2_R_Model <-lm(Weight~Length1+Length3, data=Pike)
 anova(Pike_best.model, Pike_best_2_R_Model)
 ```
+
+
+The anova code generates the analysis needed to examine our hypothesis. The p-value is 0.03091 which is still less than but close to the informal cut off of 0.05. This compares the best model and the 2 element model which is why model 1 has all elements to predict a Pike's weight and model 2 only has 2. 
+
+## Roach
+
 
 ## Roach
 
