@@ -160,7 +160,6 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomleft",main="Adjusted R^2"
 According to the data for the Roach fish, the best model is the 2 element model since it places higher than the rest of the categories. This is similar to the Perch results, however, it is a different y intercept and uses the factor Length3, rather than Height, along with width. 
 
 
-### Best Two regressor model
 
 ### Best Two regressor model
 ```{r}
@@ -169,13 +168,15 @@ summary(Roach_best_model)
 ```
 
 
+Again similar to the 2 element model for Perch, above is the Roach's weight prediction based on length and width. We were able to predict these as the best factors based on the greatest r-squared value plotted along the y-axis and the value of the x-axis that corresponds with it. 
+
 ```{r}
 Roach_best_model <- lm(Weight~Length3+Width,data=Roach)
 five_element_Roach_model <- lm(Weight~.,data=Roach)
 anova(Roach_best_model, five_element_Roach_model)
 ```
 
-
+The Analysis of Variance comparing the 2 element model with the 5 element model suprisingly results in hardly any statistical difference. Model 1 with Length3 and Width reads in at 20368, while model 2 with Length1, Length2, Length3, Height, and Width is only slightly less at 19771. 
 
 
 ## Final Summary Statements
