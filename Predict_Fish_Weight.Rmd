@@ -112,7 +112,21 @@ as.data.frame(summary.out$outmat)
 library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="topleft",main="Adjusted R^2")
 ```
+
 ### Best Two regressor model
+```{r}
+Pike_best.model <- lm(Weight~.,data=Pike)
+summary(Pike_best.model)
+Pike_best_2_R_Model <-lm(Weight~Length1+Length3, data=Pike)
+``` 
+
+
+
+```{r}
+Pike_best.model <- lm(Weight~.,data=Pike)
+Pike_best_2_R_Model <-lm(Weight~Length1+Length3, data=Pike)
+anova(Pike_best.model, Pike_best_2_R_Model)
+```
 
 ## Roach
 
