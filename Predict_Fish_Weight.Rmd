@@ -79,6 +79,7 @@ best.model <- lm(Weight~Height+Width,data=Perch)
 summary(best.model)
 ``` 
 
+The model above uses r code to predict a Perch's weight. The first graph shows that the best model for this fishes weight will also be the best two regressor model. The height and width of the fish are used in the element model as the two factors used to predict a Perch's weight. When the adjusted r squared value equals 0.94, there is a plotted point on the 2nd value on the x-axis. 
 
 ```{r}
 best_Perch_Model <- lm(Weight~Height+Width,data=Perch)
