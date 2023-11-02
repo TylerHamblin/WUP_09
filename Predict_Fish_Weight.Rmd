@@ -91,6 +91,10 @@ The Analysis of Variance shows how the statistics shown in the two element model
 
 
 ## Pike
+```{r}
+Pike <- filter(fish, Species=="Pike")
+Pike <- select(Pike, -(Species))
+```
 
 ### Best Models
 
