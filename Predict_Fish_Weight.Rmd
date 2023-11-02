@@ -113,6 +113,8 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="topleft",main="Adjusted R^2")
 ```
 
+The code above is used to determine the best model for the data predicting a Pike's weight. The subset size represents the x-axis, while the adjusted R-squared value represents the y-axis. The legend at the top defines all of the abbreviations and shows the best combination of prediction factors which happens to be 0.98 because it is higher than all the rest. 
+
 ### Best Two regressor model
 ```{r}
 Pike_best.model <- lm(Weight~.,data=Pike)
