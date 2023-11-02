@@ -74,8 +74,17 @@ subsets(regsubsets.out,statistic="adjr2",legend="topright",main="Adjusted R^2")
 
 
 ### Best Two regressor model
+```{r}
+best.model <- lm(Weight~Height+Width,data=Perch)
+summary(best.model)
+``` 
 
 
+```{r}
+best_Perch_Model <- lm(Weight~Height+Width,data=Perch)
+five_element_perch_model <- lm(Weight~.,data=Perch)
+anova(best_Perch_Model, five_element_perch_model)
+```
 
 ## Pike
 
