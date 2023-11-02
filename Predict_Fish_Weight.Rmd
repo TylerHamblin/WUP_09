@@ -180,3 +180,5 @@ The Analysis of Variance comparing the 2 element model with the 5 element model 
 
 
 ## Final Summary Statements
+
+Beginning with the data for the Perch, we found that the best way to predict this specific fish's weight was through a two method model factoring in Height and Width. After running the anova test it was still advisable to use a 2 element model because there was little statistical difference between that and the 5 element model. The Pike fish's weight was easiest to predict through all five of the factors combined which can best be displayed in a 5 element model. The anova test shows that the p-value is 0.03091 which is lower than the 0.5 cutoff by enough to suggest that the 2 element model may be more desirable for the Pike fish.The Roach fish data also suggested that the best way to predict it's weight was with the 2 element model but this time with Length3 and Width as the factors. After the two best regressor model tests it was more certain that there was no significant difference that showed the 5 element model performing any better. 
