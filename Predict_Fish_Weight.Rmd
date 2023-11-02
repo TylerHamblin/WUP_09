@@ -135,9 +135,10 @@ anova(Pike_best.model, Pike_best_2_R_Model)
 The anova code generates the analysis needed to examine our hypothesis. The p-value is 0.03091 which is still less than but close to the informal cut off of 0.05. This compares the best model and the 2 element model which is why model 1 has all elements to predict a Pike's weight and model 2 only has 2. 
 
 ## Roach
-
-
-## Roach
+```{r}
+Roach <- filter(Fish, Species=="Roach")
+Roach <- select(Roach, -(Species))
+```
 
 ### Best Models
 
